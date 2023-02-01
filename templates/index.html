@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+<main>
+    <div class="containerWperc dFlex fDirectionColumn jcCenter" id="main_section">
+        <div class="blur">
+            <h1>I am <span>Varshil</span> Patel.</h1>
+            <p class="taRight">-PROGRAMMER</p>
+            <a href="/contact" class="aReset tUpr fw700 bcWhite  mt3 cBlack px4 py1 capsule">Contact</a>
+        </div>
+    </div>
+    <section class="containerWperc dFlexCenter fDirectionColumn py5 px10" id="about_section">
+        <h1 class="tUpr head_title cWhite">About Me</h1>
+        <div class="line mt2 capsule bcWhite"></div>
+        <div class="dFlexCenter mt5" id="about_details">
+            <img src="static/main.jpg">
+            <div class="about_para dFlexCenter fDirectionColumn">
+                <p class="fw400">Hey! there, My self Varshil. I am pursing my B.C.A. in Silver Oak University.</p>
+                <p class="fw400">Hey! there, My self Varshil. I am pursing my B.C.A. in Silver Oak University.</p>
+            </div>
+        </div>
+    </section>
+    <section class=" containerWperc dFlexCenter fDirectionColumn  py5 px10" id="project_section">
+        <h1 class="tUpr head_title">My Work</h1>
+        <div class="line mt2 capsule bcBlack"></div>
+        <div class="dFlexCenter mt5 project_details fWrap">
+            <div class="first_project pRel">
+                <div class="layer pAbs"></div>
+                <p>A complete login system in PHP and MySQL</p>
+                <a href="http://login-sys.epizy.com" target="_blank"><img src="static/remove_red_eye_white_24dp.svg" class="pAbs eye_btn"></a>
+                <span class="pAbs tUpr">Show now</span>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

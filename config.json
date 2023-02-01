@@ -1,0 +1,9 @@
+{
+    "parameters" : {
+        "local_server" : "True",
+        "local_server_uri" : "mysql://root:@localhost/contact_prf",
+        "host_server_uri" : "",
+        "sender_email" : "mail.varshil@gmail.com",
+        "sender_email_password" : ""
+    }
+}
