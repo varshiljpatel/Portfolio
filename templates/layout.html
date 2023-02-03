@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varshil J. Patel - Genuine</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'resp.css') }}">
 </head>
 <body>
     <header>
         <nav class="containerWperc dFlex aiCenter jcBetween bcBlack px5 py2" id="nav_bar">
-            <div class="logo dFlexCenter" id="nav_logo"><a href="/" class="aReset">Varshil J. Patel</a></div>
+            <div class="nav_layer dNone"></div>
+            <a href="/"><img class="logo" src="static/vlogo.svg"></a>
             <ul class="ulReset dFlex aiCenter">
                 <li class="liReset"><a href="/#about_section" class="aReset cWhite px3 py1">About</a></li>
                 <li class="liReset"><a href="/#project_section" class="aReset cWhite px3 py1">Work</a></li>
@@ -21,7 +23,7 @@
 {% block body %} {% endblock %}
     <a href="#nav_logo" class="aReset dFlexCenter pFixed upper"><img src="static/navigate_next_black_24dp.svg"></a>
     <footer>
-        <section class="containerWperc dFlex fDirectionColumn jcCenter aiCenter py5" id="footer_section">
+        <section class="containerWperc dFlex fDirectionColumn jcCenter aiCenter px2 py5" id="footer_section">
             <div class="footer_details dFlexCenter">
                 <div class="dFlex aiCenter jcBetween footer_item">
                     <img src="static/call_white_24dp.svg">
@@ -36,7 +38,7 @@
                     <span class="ml2">Chandlodiya, A'bad, Gujarat, India</span>
                 </div>
             </div>
-            <h3 class="copy_text mt3">Copyright &copy; 2023 : Varshil J. Patel All Right Reserved</h3>
+            <h3 class="copy_text mt3 taCenter">Copyright &copy; 2023 : Varshil J. Patel All Right Reserved</h3>
         </section>
     </footer>
 </body>

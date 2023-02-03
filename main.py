@@ -17,6 +17,7 @@ app.config.update(
     MAIL_SERVER = 'smtp.gmail.com',
     MAIL_PORT = '465',
     MAIL_USE_SSL = True,
+    MAIL_USE_TSL = False,
     MAIL_USERNAME = config_parameters['sender_email'],
     MAIL_PASSWORD=  config_parameters['sender_email_password']
 )
@@ -58,10 +59,10 @@ def contact():
         entry = users(name=name, message = message, email = email)
         db.session.add(entry)
         db.session.commit()
-        mail.send_message('New message from ' + name,
-                        sender = email,
-                        recipients = [config_parameters['sender_email']],
-                        body = message + "\n")
+        # mail.send_message('New message from ' + name,
+        #                 sender = email,
+        #                 recipients = [config_parameters['sender_email']],
+        #                 body = message + "\n")
     return render_template("contact.html")
 
 app.run(debug=True)
