@@ -19,6 +19,7 @@ body, html {
     background-color: #252525;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    
 }
 
 .upper:hover {
@@ -37,6 +38,12 @@ header nav .logo {
     justify-content: center;
     font-weight: 600;
     cursor: pointer;
+    background-color: #ffffff;
+}
+
+#rotate_logo img {
+    animation: sping 5s infinite;
+    width: 30vw;
 }
 
 header nav .logo a {
@@ -288,4 +295,13 @@ form button:hover {
 
 .contact_title {
     color: var(--color_dark);
+}
+
+@keyframes sping {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }

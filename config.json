@@ -3,7 +3,7 @@
         "local_server" : "True",
         "local_server_uri" : "mysql://root:@localhost/contact_prf",
         "host_server_uri" : "mysql://root:@localhost/contact_prf",
-        "sender_email" : "mail.varshil@gmail.com",
-        "sender_email_password" : "Varshil_J._Patel_31102004"
+        "sender_email" : "",
+        "sender_email_password" : ""
     }
 }
